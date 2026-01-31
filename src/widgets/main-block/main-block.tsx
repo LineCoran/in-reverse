@@ -7,7 +7,12 @@ export const MainBlock = () => {
   };
 
   return (
-    <UiButton className='dafads' name='dasf' href='dasf' onClick={handleClick}>
+    <UiButton
+      className='dafads'
+      name='dasf'
+      href='dasf'
+      onClick={handleClick}
+    >
       Hello
     </UiButton>
   );

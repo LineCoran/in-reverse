@@ -25,10 +25,7 @@ const eslintConfig = defineConfig([
       'react/jsx-first-prop-new-line': ['error', 'multiline'], // первый пропс на новой строке, если несколько пропсов
       'react/jsx-max-props-per-line': [
         'error',
-        {
-          maximum: 2, // максимум 1 пропс на строку
-          when: 'multiline', // только для многострочных элементов
-        },
+        { 'maximum': { 'multi': 1, 'single': 3 } },
       ],
       'react/jsx-closing-bracket-location': ['error', 'line-aligned'], // закрывающий тег на одной линии с открывающим
       'react/jsx-tag-spacing': [
