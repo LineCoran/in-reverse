@@ -5,6 +5,4 @@ export {
   Space as UiSpace,
 } from 'antd';
 
-export {
-  UiText
-} from './ui-text'
+export { UiText } from './ui-text';
