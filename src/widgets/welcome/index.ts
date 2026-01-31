@@ -1,1 +1,1 @@
-export { WelcomeWidget } from './welcome-main-block'
+export { WelcomeWidget } from './welcome-main-block';

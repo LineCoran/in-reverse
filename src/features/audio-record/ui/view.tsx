@@ -48,11 +48,7 @@ export const View = () => {
             {originAudio && (
               <UiFlex vertical gap={8}>
                 <UiText>Оригинальная дорожка:</UiText>
-                <audio
-                  src={originAudio}
-                  controls
-                  style={{ width: '100%' }}
-                />
+                <audio src={originAudio} controls style={{ width: '100%' }} />
               </UiFlex>
             )}
             {reversedAudio && (

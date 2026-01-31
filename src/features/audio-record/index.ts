@@ -1,1 +1,1 @@
-export { View as AudioRecorderView } from './ui'
+export { View as AudioRecorderView } from './ui';

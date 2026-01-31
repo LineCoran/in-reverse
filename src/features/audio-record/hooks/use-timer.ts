@@ -8,40 +8,39 @@ export const useTimer = () => {
   const intervalRef = useRef<undefined | NodeJS.Timeout>(undefined);
 
   const start = () => {
-    clear()
-    setValue(0)
+    clear();
+    setValue(0);
     intervalRef.current = setInterval(() => {
-      setValue(prev => typeof prev === 'number' ? prev + intervalMs : 0)
-    }, intervalMs)
-  }
+      setValue((prev) => (typeof prev === 'number' ? prev + intervalMs : 0));
+    }, intervalMs);
+  };
 
   const stop = () => {
     clearInterval(intervalRef.current);
-  }
+  };
 
   const clear = () => {
-    setValue(null)
+    setValue(null);
     clearInterval(intervalRef.current);
   };
 
   const pauseTimer = () => {
     clearInterval(intervalRef.current);
-  }
+  };
 
   const continueTimer = () => {
     intervalRef.current = setInterval(() => {
-      setValue(prev => typeof prev === 'number' ? prev + intervalMs : 0)
-    }, intervalMs)
-  }
-  
+      setValue((prev) => (typeof prev === 'number' ? prev + intervalMs : 0));
+    }, intervalMs);
+  };
+
   useEffect(() => {
-    return () => clear()
-  }, [])
-  
-  
+    return () => clear();
+  }, []);
+
   const formatedValue = useMemo(() => {
-    return msToMinAndSeconds(value)
-  }, [value])  
+    return msToMinAndSeconds(value);
+  }, [value]);
 
   return {
     start,
@@ -50,5 +49,5 @@ export const useTimer = () => {
     formatedValue,
     pauseTimer,
     continueTimer,
-  }
-}
+  };
+};
