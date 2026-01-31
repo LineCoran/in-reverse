@@ -1,0 +1,28 @@
+.wrapper {
+    background: radial-gradient(ellipse at center, rgba(123, 0, 199, .1) 0, rgba(255, 255, 255, 0) 70%) 25% 60px no-repeat, radial-gradient(ellipse at center, rgba(0, 252, 255, .1) 0, rgba(0, 252, 255, 0) 70%) 75% -130px no-repeat, radial-gradient(ellipse at center, #1a2f7d 0, #232b56 100%);
+    padding: 12px 0;
+    border-radius: 16px;
+}
+
+.recordButton:hover {
+    transform: scale(1.1);
+}
+
+.recordWrapper {
+    border-radius: 50%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .3);
+    width: max-content;
+}
+
+.pauseWrapper {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    height: max-content;
+    padding: 5px;
+}
+
+.recordWrapperRecording {
+    border-radius: 35px;
+    min-width: 100px;
+}

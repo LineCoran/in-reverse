@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["./*"],
       "@common/*": ["src/common/*"],
-      "@widgets/*": ["src/widgets/*"]
+      "@widgets/*": ["src/widgets/*"],
+      "@features/*": ["src/features/*"],
     }
   },
   "include": [

@@ -1,0 +1,1 @@
+export { View as AudioRecorderView } from './ui'
